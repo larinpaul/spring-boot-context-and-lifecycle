@@ -18,6 +18,14 @@
 // In this quick tutorial, we'll cover the different ways of configuring it.
 
 
+// 2. Setting the Property
 
+// Just like many other configuration options,
+// the context path in Spring Boot can be changed by setting a property,
+// server.servlet.context-path.
+
+// Note that this works for Spring Boot 2.x. For Boot 1.x, the property is server.conext-path.
+
+// There are multiple ways of setting this property, so let's look at them one by one.
 
 
