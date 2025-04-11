@@ -29,3 +29,14 @@
 // There are multiple ways of setting this property, so let's look at them one by one.
 
 
+// 2.1. Using application.properties / yml
+
+// The most straightforward way of changing the context path
+// is to set the property in the application.properties/yml file:
+
+server.servlet.context-path=/baeldung
+
+// Instead of putting properties file in src/main/resources,
+// we can also keep it in the current working directory (outside of the classpath).
+
+
