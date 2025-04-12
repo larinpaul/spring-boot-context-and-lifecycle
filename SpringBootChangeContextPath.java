@@ -40,3 +40,13 @@ server.servlet.context-path=/baeldung
 // we can also keep it in the current working directory (outside of the classpath).
 
 
+// 2.2. Java System Property
+
+// We can also set the context path as a Java system property before the context is even initialized:
+
+public static void main(String[] args) {
+    System.setProperty("server.servlet.context-path", "/baeldung");
+    SpringApplication.run(Application.class, args);
+}
+
+
