@@ -50,3 +50,20 @@ public static void main(String[] args) {
 }
 
 
+// 2.3. OS Environment Variable
+
+// Spring Boot can also rely on OS environment variables. On Unix based systems we can write:
+
+$ export SERVER_SERVLET_CONTEXT_PATH=/baeldung
+
+// On Windows, the command to set an environment variable is:
+
+> set SERVER_SERVLET_CONTEXT_PATH=/baeldung
+
+// The above environment variable is for Spring Boot 2.x.x.
+// If we have 1.x.x., the variable is SERVER_CONTEXT_PATH.
+
+
+
+
+
