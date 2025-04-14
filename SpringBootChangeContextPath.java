@@ -92,6 +92,20 @@ public EmbeddedServletContainerCustomizer
         }
 
 
+// 4. Priority Order of Configurations
 
+// With this many options, we may end up having more than one configuration for the same property.
 
+// Here's the priority order in descending order, // https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-external-config.html
+// which Spring Boot uses to select the effective configuration:
+// 1. Java Config
+// 2. Command Line Arguments
+// 3. Java System Properties
+// 4. OS Environment Variables
+// 5. applications.properties in Curreny Directory
+// 6. application.properties in the classpath (src/main/resources or the packaged jar file)
 
+// 5. Conclusion
+
+// In this brief article, we convered the different ways of setting the context path,
+// or any other configuration property, in a Spring Boot application
