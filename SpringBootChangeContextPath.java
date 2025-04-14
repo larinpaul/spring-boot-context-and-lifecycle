@@ -73,4 +73,25 @@ $ java -jar app.jar --server.servlet.context-path=/baeldung
 
 // 3. Using Java Config
 
+// Now let's set the context path by populating the bean factory with a configuration bean.
+
+// With Spring Boot 2, we can use WebServerFactoryCustomizer.
+
+@Bean
+public WebServerFactoryCustomizer<ConfigurableServletWebServerFactory>
+        webServerFactoryCustomizer() {
+                return factory -> factory.setContextPath("/baeldung");            
+        }
+
+// With Spring Boot 1, we can create an instance of EmbeddedServletContainerCustomizer.
+
+@Bean
+public EmbeddedServletContainerCustomizer
+        embeddedServletContainerCustomizer() {
+                return container -> container.setContextPath("/baeldung");
+        }
+
+
+
+
 
