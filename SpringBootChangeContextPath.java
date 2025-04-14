@@ -64,6 +64,13 @@ $ export SERVER_SERVLET_CONTEXT_PATH=/baeldung
 // If we have 1.x.x., the variable is SERVER_CONTEXT_PATH.
 
 
+// 2.4. Command Line Arguments
 
+// We can set the properties dynamically via commnd line arguments as well:
+
+$ java -jar app.jar --server.servlet.context-path=/baeldung
+
+
+// 3. Using Java Config
 
 
